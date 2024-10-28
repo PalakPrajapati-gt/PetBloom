@@ -192,6 +192,37 @@ header {
     padding: 15px;
 }
 
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .main-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .products-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Hamburger Icon */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+
+
 /* Video Section */
 .video-section {
     background-color: #f4ece4;
@@ -352,7 +383,58 @@ cursor: pointer;
 size-adjust: 50px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    /* Main Intro */
+    .intro-box {
+        flex-direction: column;
+    }
+
+    .intro {
+        text-align: center;
+    }
+
+    /* Video Section */
+    .video-item video {
+        width: 100%;
+    }
+
+    /* Reviews Section */
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Footer */
+    .footer-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    /* Footer Social Icons */
+    .social-links {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+}
 
 /*PRODUCTS*/
 
@@ -439,6 +521,42 @@ size-adjust: 50px;
     background-color: #a83758;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Reduce product grid to 3 columns on tablet */
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar for smaller screens */
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce product grid to 2 columns on small tablets */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar adjustments for mobile */
+    .nav-links {
+        display: none;
+    }
+
+    /* Stack product grid in a single column on mobile */
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-item {
+        margin-bottom: 20px;
+    }
+}
 
 /*ABOUT US*/
 
@@ -632,6 +750,67 @@ size-adjust: 50px;
     line-height: 1.6;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    /* Navbar */
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Reduce padding for medium screens */
+    .about-container,
+    .mission,
+    .core-values {
+        padding: 20px;
+    }
+
+    /* Display core values in two columns */
+    .values-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    /* About Section */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Mission Section */
+    .mission {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Core Values */
+    .values-list {
+        grid-template-columns: 1fr;
+    }
+
+    .value-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust font size for smaller screens */
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    /* Footer links in a single row */
+    .social-links {
+        flex-direction: row;
+    }
+}
 /*CONTACT US*/
 
 
@@ -739,6 +918,49 @@ size-adjust: 50px;
     }
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Padding Adjustments */
+    .contact-details,
+    .contact-form,
+    .map-location {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust font sizes for smaller screens */
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .contact-info,
+    .social-links {
+        font-size: 0.9em;
+    }
+
+    /* Contact Form Styling */
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1em;
+    }
+
+    /* Footer Links in a Single Row */
+    .social-links {
+        flex-direction: row;
+    }
+}
+
 
 /* Visit Us */
 
@@ -821,3 +1043,46 @@ size-adjust: 50px;
     margin-bottom: 10px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Hero Section */
+    .visit-hero {
+        height: 200px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Text Adjustments */
+    .visit-intro h2, .visit-why-choose-us h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar */
+    .logo img {
+        max-width: 100px;
+    }
+
+    /* Text Adjustments */
+    .visit-intro p, .visit-why-choose-us p {
+        font-size: 0.9em;
+    }
+
+    /* Footer Links in Single Row */
+    .social-links {
+        flex-direction: row;
+    }
+
+    /* Footer Note */
+    .footer-note p {
+        font-size: 0.8em;
+    }
+}
