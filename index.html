@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetBloom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Untitled-1.png" alt="PetBloom Logo">
+            </div>
+            <div><ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+
+    <main class="main-section">
+        <div class="intro-box"> 
+            <div class="visit-container">
+                <img src="cute dog 2.gif" alt="Cute Dog" class="visit-gif">
+            </div>
+            
+            <div class="intro">
+                <h1>Welcome to PetBloom</h1>
+                <p>Your go-to place for healthy products for your pets!</p>
+                <a href="visitus.html" class="visit-more">Visit us to know more</a>
+            </div>
+            
+        </div>
+        
+    </main>
+
+
+    <section class="lifestage-products-section">
+        <h1 class="section-heading4">Products by Life Stage</h1>
+        <div class="products-container">
+            <div class="product">
+                <img src="puppy dog.jfif" alt="Puppy Dog">
+                <div class="product-info">
+                    <h3>Puppy Dog</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="adult dog.jpeg" alt="Adult Dog">
+                <div class="product-info">
+                    <h3>Adult Dog</h3>
+                </div>
+            </div>
+            <div class="product">
+                <img src="senior dog.jpg" alt="Senior Dog">
+                <div class="product-info">
+                    <h3>Senior Dog</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+      
+<section class="video-section">
+    <h1 class="section-heading">Fun Moments with Pets</h1>
+    <p>Watch how our customers enjoy playful moments with their furry friends!</p>
+    <div class="video-container">
+        <div class="video-item">
+            <video width="350" controls loop>
+                <source src="1106742_1080p_4k_1920x1080.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Owner Playing with their furry friend</p>
+        </div>
+        <div class="video-item">
+            <video width="350" controls loop>
+                <source src="playing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Dog and Owner Relaxing in the Park</p>
+        </div>
+        <div class="video-item">
+            <video width="350" controls loop>
+                <source src="bathing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>Fun Bath Time with a Senior Dog</p>
+        </div>
+    </div>
+</section>
+
+    
+    <section class="reviews-section">
+        <h1 class="section-heading2">Customer Reviews</h1>
+        <div class="reviews-container">
+            <div class="review">
+                <h3>Kartikeya Goyal</h3>
+                <p>My dog absolutely loves the healthy treats! A must-have for all pet owners.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="review">
+                <h3>Jane</h3>
+                <p>The organic shampoo smells amazing and my cat’s fur is so soft now.</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <div class="review">
+                <h3>Riti Roy</h3>
+                <p>The pet bed is so comfortable, my dog spends hours on it every day!</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+    </section>
+
+  
+<footer class="footer-section">
+    <div class="social-media">
+        <h3>Follow Us</h3>
+        <ul class="social-links">
+            <li><a href="#" target="_blank"><div class="icons"> <i class="fab fa-twitter"></i></div></a></li>
+            <li><a href="https://instagram.com/yourprofile" target="_blank"><div class="icons"><i class="fab fa-instagram"></i></div></a></li>
+            <li><a href="#" target="_blank"><div class="icons"><i class="fab fa-linkedin"></i></div></a></li>
+        </ul>
+        </div>
+    <div class="footer-note">
+        <p>&copy; 2024 PetBloom. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+<script>
+    // Select all video elements
+    const videos = document.querySelectorAll('.video-container video');
+
+    // Add event listeners for each video
+    videos.forEach(video => {
+        // Play the video on mouse enter
+        video.addEventListener('mouseenter', () => {
+            video.play();
+        });
+
+        // Pause the video on mouse leave
+        video.addEventListener('mouseleave', () => {
+            video.pause();
+        });
+    });
+</script>
+</html>

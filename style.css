@@ -1,0 +1,823 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background-color: white;
+}
+
+
+header {
+    padding: 4px 2px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    padding-right: 12px;
+    font-family: 'Poppins', sans-serif; 
+    padding-left: 12px;
+    padding-top: 10px;
+}
+
+/* CSS for realistic navbar styling */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #e4f7bc; /* Light background for nav */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif; 
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0.5rem;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.logo img {
+    height: 50px; /* Adjust logo size if necessary */
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #d06791; /* Accent color on hover */
+    border-bottom: 2px solid #d06791 ; /* Underline effect */
+}
+
+/* Main Section */
+
+.main-section {
+    background-image: url('petback.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0.9;
+    top: 20px;
+}
+
+.intro-box {
+    animation: fadeIn 3s ease-in-out;
+    margin-bottom: 20%;
+}
+
+.intro {
+    background-color: rgba(137, 132, 132, 0.7);
+    padding: 50px;
+    border-radius: 20px;
+    animation: fadeIn 3s ease-in-out;
+    margin-top: -37px;
+}
+
+.intro h1 {
+    font-size: 3em;
+    color: #4d2117;
+    animation: slideIn 2s ease-in-out;
+}
+
+.intro p {
+    font-size: 1.5em;
+    color: #fffdfe;
+}
+
+.visit-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #c8496d;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+}
+
+.visit-more:hover {
+    background-color: #3F292B;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+  
+/* GIF styling */
+.visit-gif {
+    width: 200px; /* Adjust size as needed */
+    margin-bottom: 0; /* Space between GIF and button */
+    animation:   ease-in-out infinite; /* Infinite bounce effect */
+}
+
+.lifestage-products-section {
+    background-color:#b9d088;
+    padding: 50px;
+    text-align: center;
+}
+
+.section-heading4{
+    font-size: 3.9em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    color:#c8496d;
+    margin-bottom: 30px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+/* Video Section */
+.video-section {
+    background-color: #f4ece4;
+    padding: 50px;
+    text-align: center;
+}
+
+.video-section h1 {
+    font-size: 3.9em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; 
+    color: #4d2117;
+    margin-bottom: 30px;
+}
+
+.video-section p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #c8496d; 
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-item {
+    text-align: center;
+    max-width: 450px;
+}
+
+.video-item video {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-item p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #4d2117;
+}
+.video-item video {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation-play-state: paused; /* Stop video from playing */
+}
+
+.video-item:hover video {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    animation-play-state: running; /* Resume video playback on hover */
+}
+
+
+
+
+/* Reviews Section */
+.reviews-section {
+    background-color: #b9d088;
+    padding: 50px;
+    text-align: center;
+
+}
+
+.section-heading2{
+    font-size: 3.9em;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #c8496d;
+    margin-bottom: 30px;
+}
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.review {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+}
+
+.review h3 {
+    color: #663399; 
+}
+
+.review p {
+    margin: 10px 0;
+}
+
+.checked {
+    color: orange; 
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #f4ece4;
+    padding: 20px 0;
+    text-align: center;
+    color: #C75B7A;
+    
+}
+
+.footer-section h3 {
+    font-size: 1.6em; 
+    margin-bottom: 10px; 
+    font-family: 'Poppins', sans-serif;
+    color: #C75B7A;
+}
+
+.social-media {
+    margin-bottom: 10px; 
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links li a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-note p {
+    font-size: 0.8em; 
+    margin-top: 5px; 
+    color:#C75B7A;
+}
+
+.icons{
+color: #C75B7A;
+margin: 0 5px;
+padding: 28px  0;
+cursor: pointer;
+size-adjust: 50px;
+}
+
+
+
+/*PRODUCTS*/
+
+.products-main {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Animation for Section Heading */
+.section-heading {
+    color: #7d583a;
+    font-size: 4rem;
+    opacity: 0;
+    transform: translateY(20px); /* Start position */
+    animation: slideIn 1s ease forwards; /* Trigger animation */
+    margin-bottom: 2%;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-item img {
+    width: 90%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item h3 {
+    margin: 10px 0;
+    color: #4d2117;
+}
+
+.product-item p {
+    color: #c8496d;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #4d2117;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #c8496d;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #a83758;
+}
+
+
+/*ABOUT US*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.about-intro {
+    display: flex;
+    align-items: center;
+    animation: fadeInLeft 1.2s ease-in-out;
+    padding: 3%;
+    margin: 2%;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin: 40px; /* Adds top margin to the section */
+}
+
+.about-image img {
+    padding: none;
+}
+
+
+.about-container {
+    display: flex;
+    align-items: center;
+}
+
+.about-image img {
+    width: 300px;
+    padding-right: 10%;
+    height: auto;
+    animation: scaleUp 1s ease-in-out;
+}
+
+.about-text h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    animation: slideInRight 1.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    color: #C75B7A;
+}
+
+
+.about-text p {
+    font-size: 1.2em;
+    color: #4d2117;
+    line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fdf5e6;
+    padding: 50px 110px;
+}
+
+.mission-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.mission-content h2 {
+    font-size: 3.5em;
+    color:#C75B7A;
+    font-family:'Poppins', sans-serif;
+}
+
+.mission-content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.mission img {
+    flex: 1;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.core-values {
+    background-color: #fbfbfb;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.core-values h2 {
+    font-size: 3.5em;
+    color:#C75B7A;
+    margin-bottom: 20px;
+   font-family: 'Poppins', sans-serif;
+}
+
+.values-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h3 {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/*CONTACT US*/
+
+
+
+/* Contact Section Styling */
+.contact-details {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-details h2 {
+    color: #c8496d;
+    font-size: 2.4em;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.contact-info li {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+/* Form Styling */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.contact-form h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #555;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #c8496d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3F292B;
+}
+
+/* Map Section */
+.map-location {
+    margin-top: 30px;
+}
+
+.map-location h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-details h2 {
+        font-size: 2em;
+    }
+
+    .contact-form h3, .map-location h3 {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Visit Us */
+
+
+.visit-hero h1 {
+    font-size: 36px;
+    color: #4CAF50;
+}
+
+.visit-hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.visit-intro {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.visit-intro h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.visit-intro p {
+    font-size: 18px;
+    color: #555;
+}
+
+.visit-intro ul {
+    list-style: none;
+    padding: 0;
+}
+
+.visit-intro li {
+    margin-bottom: 10px;
+}
+
+.visit-more {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #c8496d;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
+}
+
+.visit-more:hover {
+    background-color: #3F292B;
+}
+
+.visit-why-choose-us {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eef6f8; /* Light grey background */
+}
+
+.visit-why-choose-us h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.visit-why-choose-us p {
+    font-size: 18px;
+    color: #555;
+}
+
+.visit-why-choose-us ul {
+    list-style: none;
+    padding: 0;
+}
+
+.visit-why-choose-us li {
+    margin-bottom: 10px;
+}
+
